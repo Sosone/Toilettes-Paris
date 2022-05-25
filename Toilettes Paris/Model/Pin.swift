@@ -92,7 +92,10 @@ struct Location {
                            Location.t590, Location.t591, Location.t592, Location.t593, Location.t594, Location.t595, Location.t596, Location.t597, Location.t598, Location.t599,
                            Location.t600,
                                
-                              ])
+//                               LOC 601 À 614:
+                                                             
+                               Location.t601, Location.t602, Location.t603, Location.t604, Location.t605, Location.t606, Location.t607, Location.t608, Location.t609,
+                           Location.t610, Location.t611, Location.t612, Location.t613, Location.t614])
     
     //    Variables 1 à 100:
     static let t1 = Pin(title: "4 place de Breteuil", coordinate: CLLocationCoordinate2D(latitude: 48.84733413997167, longitude: 2.3109598986410163), info: "6h - 22h", pmr: true)
@@ -705,6 +708,22 @@ struct Location {
     static let t598 = Pin(title: <#T##String#>, coordinate: CLLocationCoordinate2D(latitude: 48, longitude: 2), info: <#T##String#>, pmr: <#T##Bool#>)
     static let t599 = Pin(title: <#T##String#>, coordinate: CLLocationCoordinate2D(latitude: 48, longitude: 2), info: <#T##String#>, pmr: <#T##Bool#>)
     static let t600 = Pin(title: <#T##String#>, coordinate: CLLocationCoordinate2D(latitude: 48, longitude: 2), info: <#T##String#>, pmr: <#T##Bool#>)
+    
+    //    Variables 601 à 614:
+    static let t601 = Pin(title: <#T##String#>, coordinate: CLLocationCoordinate2D(latitude: 48, longitude: 2), info: <#T##String#>, pmr: <#T##Bool#>)
+    static let t602 = Pin(title: <#T##String#>, coordinate: CLLocationCoordinate2D(latitude: 48, longitude: 2), info: <#T##String#>, pmr: <#T##Bool#>)
+    static let t603 = Pin(title: <#T##String#>, coordinate: CLLocationCoordinate2D(latitude: 48, longitude: 2), info: <#T##String#>, pmr: <#T##Bool#>)
+    static let t604 = Pin(title: <#T##String#>, coordinate: CLLocationCoordinate2D(latitude: 48, longitude: 2), info: <#T##String#>, pmr: <#T##Bool#>)
+    static let t605 = Pin(title: <#T##String#>, coordinate: CLLocationCoordinate2D(latitude: 48, longitude: 2), info: <#T##String#>, pmr: <#T##Bool#>)
+    static let t606 = Pin(title: <#T##String#>, coordinate: CLLocationCoordinate2D(latitude: 48, longitude: 2), info: <#T##String#>, pmr: <#T##Bool#>)
+    static let t607 = Pin(title: <#T##String#>, coordinate: CLLocationCoordinate2D(latitude: 48, longitude: 2), info: <#T##String#>, pmr: <#T##Bool#>)
+    static let t608 = Pin(title: <#T##String#>, coordinate: CLLocationCoordinate2D(latitude: 48, longitude: 2), info: <#T##String#>, pmr: <#T##Bool#>)
+    static let t609 = Pin(title: <#T##String#>, coordinate: CLLocationCoordinate2D(latitude: 48, longitude: 2), info: <#T##String#>, pmr: <#T##Bool#>)
+    static let t610 = Pin(title: <#T##String#>, coordinate: CLLocationCoordinate2D(latitude: 48, longitude: 2), info: <#T##String#>, pmr: <#T##Bool#>)
+    static let t611 = Pin(title: <#T##String#>, coordinate: CLLocationCoordinate2D(latitude: 48, longitude: 2), info: <#T##String#>, pmr: <#T##Bool#>)
+    static let t612 = Pin(title: <#T##String#>, coordinate: CLLocationCoordinate2D(latitude: 48, longitude: 2), info: <#T##String#>, pmr: <#T##Bool#>)
+    static let t613 = Pin(title: <#T##String#>, coordinate: CLLocationCoordinate2D(latitude: 48, longitude: 2), info: <#T##String#>, pmr: <#T##Bool#>)
+    static let t614 = Pin(title: <#T##String#>, coordinate: CLLocationCoordinate2D(latitude: 48, longitude: 2), info: <#T##String#>, pmr: <#T##Bool#>)
 }
 
 class Pin: NSObject, MKAnnotation {
