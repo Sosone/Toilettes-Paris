@@ -11,7 +11,6 @@ class PinClusterAnnotationView: MKAnnotationView {
     override var annotation: MKAnnotation? {
         willSet {
             if let cluster = newValue as? MKClusterAnnotation {
-                //markerTintColor = UIColor.clear
                 let renderer = UIGraphicsImageRenderer(size: CGSize(width: 40, height: 40))
                 let count = cluster.memberAnnotations.count
                 print(count)
@@ -21,11 +20,11 @@ class PinClusterAnnotationView: MKAnnotationView {
                 print(pmrCount)
                 image = renderer.image { _ in
                     // Fill full circle with parc color
-                    UIColor.red.setFill()
+                    UIColor.blue.setFill()
                     UIBezierPath(ovalIn: CGRect(x: 0, y: 0, width: 40, height: 40)).fill()
                     
                     // Fill pie with plage color
-                    UIColor.blue.setFill()
+                    UIColor.red.setFill()
                     let piePath = UIBezierPath()
                     piePath.addArc(withCenter: CGPoint(x: 20, y: 20), radius: 20,
                                    startAngle: 0, endAngle: (CGFloat.pi * 2.0 * CGFloat(pmrCount)) / CGFloat(count),
