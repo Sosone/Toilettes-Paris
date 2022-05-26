@@ -30,11 +30,10 @@
                                     <action selector="ChangeMapTypeButton:" destination="BYZ-38-t0r" eventType="valueChanged" id="pGh-Vh-KWD"/>
                                 </connections>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0g-b9-8rU">
-                                <rect key="frame" x="316" y="753" width="67" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0g-b9-8rU">
+                                <rect key="frame" x="305" y="780" width="99" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="My position"/>
                                 <connections>
                                     <action selector="getPosition:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sTT-Er-Ucz"/>
                                 </connections>
@@ -43,8 +42,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j0g-b9-8rU" secondAttribute="trailing" constant="10" id="4lt-Zl-Ha2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dv6-bB-obE" secondAttribute="trailing" constant="10" id="7bW-0y-Jna"/>
                             <constraint firstItem="v6G-Q7-0Iv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="F2M-zs-Yn7"/>
+                            <constraint firstItem="dv6-bB-obE" firstAttribute="top" secondItem="j0g-b9-8rU" secondAttribute="bottom" constant="10" id="F7k-Cb-UhN"/>
                             <constraint firstItem="v6G-Q7-0Iv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QTs-qi-adk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="v6G-Q7-0Iv" secondAttribute="bottom" id="ZCg-m9-ZSK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v6G-Q7-0Iv" secondAttribute="trailing" id="e64-rr-vIk"/>
