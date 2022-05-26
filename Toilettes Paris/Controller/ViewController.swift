@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var mapView: MKMapView!
     
-    // Paris Capitale de la France pour centrer la carte
+    // Paris Capital of France to center the map
     var latitudeInit: Double = 48.856614
     var longitudeInit: Double = 2.3522219
     var coordinateInit :  CLLocationCoordinate2D {
@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         setupLocationManager()
     }
     
-    // action sur le segment
+    // Change map view
     @IBAction func ChangeMapTypeButton(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 0 : mapView.mapType = MKMapType.standard
@@ -39,39 +39,39 @@ class ViewController: UIViewController {
         default: break
         }
     }
-    
+//    Find me on the map
     @IBAction func getPosition(_ sender: Any) {
         print("getPosition")
         if userPosition != nil {
-            setupMap(coordonnees: userPosition!.coordinate, myLat: 1, myLong: 1)
+            setupMap(coordonnees: userPosition!.coordinate, myLat: 0.02, myLong: 0.02)
         } else {
             print("nil dans getPosition")
         }
     }
     
-
+    
 }
 
 extension ViewController: MKMapViewDelegate {
     func setup() {
-        setupMap(coordonnees: coordinateInit, myLat: 3, myLong: 3)
+        setupMap(coordonnees: coordinateInit, myLat: 0.2, myLong: 0.2)
         mapView.showsUserLocation = true
         mapView.delegate = self
         mapView.isRotateEnabled = true
         mapView.addAnnotations(Location.allLocation)
         
-        let capitalArea = MKCircle(center: coordinateInit, radius: 10000) // rayon de 10 km
+        let capitalArea = MKCircle(center: coordinateInit, radius: 1000) // rayon de 1 km
         mapView.addOverlay(capitalArea)
     }
     
-    // appellé par le bouton "localise moi"
+    // called by the "locate me" button
     func setupMap(coordonnees: CLLocationCoordinate2D, myLat: Double, myLong: Double) {
         let span = MKCoordinateSpan(latitudeDelta: myLat , longitudeDelta: myLong)
         let region = MKCoordinateRegion(center: coordonnees, span: span)
         mapView.setRegion(region, animated: true)
     }
     
-    // placer le titre et l'info du Pin dans l'alerte
+    // place title and pin info in alert
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         guard let pin = view.annotation as? Pin else { return }
         let placeName = pin.title
@@ -82,13 +82,11 @@ extension ViewController: MKMapViewDelegate {
         present(ac, animated: true)
     }
     
-    // définir un overlay
+    // define an overlay
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         let capitalAreaRenderer = MKCircleRenderer(circle: overlay as! MKCircle)
-        //capitalAreaRenderer.fillColor = UIColor.lightGray
         capitalAreaRenderer.strokeColor = UIColor.lightGray
         return capitalAreaRenderer
-        
     }
 }
 
@@ -98,14 +96,14 @@ extension ViewController: CLLocationManagerDelegate {
         locationManager.startUpdatingHeading()
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
-        
     }
+    
     func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
         mapView.camera.heading = newHeading.magneticHeading
         mapView.setCamera(mapView.camera, animated: true)
     }
     
-    // si mise à jour des locations
+    // if location update
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if locations.count > 0 {
             if let maPosition = locations.last {
@@ -114,5 +112,4 @@ extension ViewController: CLLocationManagerDelegate {
         }
     }
     
-
 } // end
