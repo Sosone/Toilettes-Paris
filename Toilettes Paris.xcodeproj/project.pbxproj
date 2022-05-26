@@ -18,6 +18,7 @@
 		928BA6DB283CDC7D00E94711 /* Toilettes_ParisUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928BA6DA283CDC7D00E94711 /* Toilettes_ParisUITestsLaunchTests.swift */; };
 		928BA776283D057F00E94711 /* Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928BA775283D057F00E94711 /* Pin.swift */; };
 		9295B40F283FBB840095CEC2 /* PinAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9295B40E283FBB840095CEC2 /* PinAnnotationView.swift */; };
+		9295B411283FC5FB0095CEC2 /* PinClusterAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9295B410283FC5FB0095CEC2 /* PinClusterAnnotationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		928BA6DA283CDC7D00E94711 /* Toilettes_ParisUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toilettes_ParisUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		928BA775283D057F00E94711 /* Pin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pin.swift; sourceTree = "<group>"; };
 		9295B40E283FBB840095CEC2 /* PinAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinAnnotationView.swift; sourceTree = "<group>"; };
+		9295B410283FC5FB0095CEC2 /* PinClusterAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinClusterAnnotationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 			children = (
 				928BA775283D057F00E94711 /* Pin.swift */,
 				9295B40E283FBB840095CEC2 /* PinAnnotationView.swift */,
+				9295B410283FC5FB0095CEC2 /* PinClusterAnnotationView.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				928BA6B8283CDC7B00E94711 /* AppDelegate.swift in Sources */,
 				928BA6BA283CDC7B00E94711 /* SceneDelegate.swift in Sources */,
 				928BA776283D057F00E94711 /* Pin.swift in Sources */,
+				9295B411283FC5FB0095CEC2 /* PinClusterAnnotationView.swift in Sources */,
 				9295B40F283FBB840095CEC2 /* PinAnnotationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
