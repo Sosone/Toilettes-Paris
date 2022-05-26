@@ -92,10 +92,10 @@ struct Location {
                            Location.t590, Location.t591, Location.t592, Location.t593, Location.t594, Location.t595, Location.t596, Location.t597, Location.t598, Location.t599,
                            Location.t600,
                                
-//                               LOC 601 À 615:
+//                               LOC 601 À 610:
                                                              
                                Location.t601, Location.t602, Location.t603, Location.t604, Location.t605, Location.t606, Location.t607, Location.t608, Location.t609,
-                               Location.t610, Location.t611, Location.t612, Location.t613, Location.t614, Location.t615])
+                               Location.t610])
     
     //    Variables 1 à 100:
     static let t1 = Pin(title: "4 place de Breteuil", coordinate: CLLocationCoordinate2D(latitude: 48.84733413997167, longitude: 2.3109598986410163), info: "6h - 22h", pmr: .pmrTrue)
@@ -145,7 +145,7 @@ struct Location {
     static let t45 = Pin(title: "88 ter BOULEVARD DE PORT ROYAL", coordinate: CLLocationCoordinate2D(latitude: 48.83920071261067, longitude: 2.338731588164609), info: "24 h / 24", pmr: .pmrTrue)
     static let t46 = Pin(title: "BOULEVARD SAINT MICHEL", coordinate: CLLocationCoordinate2D(latitude: 48.84175443253953, longitude: 2.337484628388991), info: "24 h / 24", pmr: .pmrTrue)
     static let t47 = Pin(title: "QUAI BRANLY", coordinate: CLLocationCoordinate2D(latitude: 48.85806633367225, longitude: 2.292315949121437), info: "24 h / 24", pmr: .pmrTrue)
-    static let t48 = Pin(title: "AVENUE FRANKLIN D ROOSEVELT", coordinate: CLLocationCoordinate2D(latitude: 48.87014131314519, longitude: 2.310160918160172), info: "6 h - 22 h", pmr: .pmrTrue)
+    static let t48 = Pin(title: "JARDIN D'EOLE - ESPLANADE", coordinate: CLLocationCoordinate2D(latitude: 48.8860364099231, longitude: 2.365850908359651), info: "8h - 20h30", pmr: .pmrTrue)
     static let t49 = Pin(title: "79 bis RUE LA FAYETTE", coordinate: CLLocationCoordinate2D(latitude: 48.87674207808279, longitude: 2.346852652338503), info: "6 h - 22 h", pmr: .pmrTrue)
     static let t50 = Pin(title: "1  AVENUE RICHERAND", coordinate: CLLocationCoordinate2D(latitude: 48.87183853334346, longitude: 2.365465590341057), info: "24 h / 24", pmr: .pmrTrue)
     static let t51 = Pin(title: "RUE DU FAUBOURG SAINT DENIS", coordinate: CLLocationCoordinate2D(latitude: 48.875775391755184, longitude: 2.356251357404286), info: "6 h - 22 h", pmr: .pmrTrue)
@@ -205,7 +205,7 @@ struct Location {
     static let t103 = Pin(title: "220  BOULEVARD DE LA VILLETTE", coordinate: CLLocationCoordinate2D(latitude: 48.88425702092837, longitude: 2.367381050280597), info: "6 h - 22 h", pmr: .pmrTrue)
     static let t104 = Pin(title: "face au 57 QUAI DE LA SEINE", coordinate: CLLocationCoordinate2D(latitude: 48.887235115112404, longitude: 2.375836531761866), info: "6 h - 1 h", pmr: .pmrTrue)
     static let t105 = Pin(title: "82  BOULEVARD DE SEBASTOPOL", coordinate: CLLocationCoordinate2D(latitude: 48.86550351402495, longitude: 2.352249091270851), info: "6 h - 22 h", pmr: .pmrTrue)
-    static let t106 = Pin(title: "RUE SAINT ANTOINE", coordinate: CLLocationCoordinate2D(latitude: 48.85530319788792, longitude: 2.360419701884549), info: "24 h / 24", pmr: .pmrTrue)
+    static let t106 = Pin(title: "JARDIN MARIA VERONE", coordinate: CLLocationCoordinate2D(latitude: 48.897104575300425, longitude: 2.3358751815764123), info: "8h - 20h30", pmr: .pmrTrue)
     static let t107 = Pin(title: "21 bis BOULEVARD BOURDON", coordinate: CLLocationCoordinate2D(latitude: 48.849930706291325, longitude: 2.366735495873733), info: "6 h - 22 h", pmr: .pmrTrue)
     static let t108 = Pin(title: "RUE CUVIER", coordinate: CLLocationCoordinate2D(latitude: 48.84439660262885, longitude: 2.360394697155951), info: "6 h - 22 h", pmr: .pmrTrue)
     static let t109 = Pin(title: "85  BOULEVARD RASPAIL", coordinate: CLLocationCoordinate2D(latitude: 48.84768309080963, longitude: 2.327969092306715), info: "6 h - 22 h", pmr: .pmrTrue)
@@ -428,7 +428,7 @@ struct Location {
     static let t322 = Pin(title: "4  RUE FERNAND LEGER", coordinate: CLLocationCoordinate2D(latitude: 48.863772755076, longitude: 2.389124137262356), info: "6 h - 22 h", pmr: .pmrTrue)
     static let t323 = Pin(title: "107  RUE RAMBUTEAU", coordinate: CLLocationCoordinate2D(latitude: 48.86274833004129, longitude: 2.346392662102407), info: "24h / 24", pmr: .pmrTrue)
     static let t324 = Pin(title: "27  BOULEVARD POISSONNIERE", coordinate: CLLocationCoordinate2D(latitude: 48.87129988583528, longitude: 2.343654073079795), info: "24h / 24", pmr: .pmrTrue)
-    static let t325 = Pin(title: "QUAI DE GESVRES", coordinate: CLLocationCoordinate2D(latitude: 48.856486160078234, longitude: 2.349796463968451), info: "24h / 24", pmr: .pmrTrue)
+    static let t325 = Pin(title: "Sous le pont Louis Philippe", coordinate: CLLocationCoordinate2D(latitude: 48.85420227463654, longitude: 2.354644393586068), info: "10h - 18h30", pmr: .pmrTrue)
     static let t326 = Pin(title: "4  RUE JUSSIEU", coordinate: CLLocationCoordinate2D(latitude: 48.84622521629629, longitude: 2.354872194164979), info: "24h / 24", pmr: .pmrTrue)
     static let t327 = Pin(title: "4  AVENUE FRANKLIN D ROOSEVELT", coordinate: CLLocationCoordinate2D(latitude: 48.87014131314519, longitude: 2.310160918160172), info: "6 h - 22 h", pmr: .pmrTrue)
     static let t328 = Pin(title: "52  QUAI DE LA LOIRE", coordinate: CLLocationCoordinate2D(latitude: 48.885803250412145, longitude: 2.375847653421224), info: "24 h / 24", pmr: .pmrTrue)
@@ -459,7 +459,7 @@ struct Location {
     static let t353 = Pin(title: "72  AVENUE DE VILLIERS", coordinate: CLLocationCoordinate2D(latitude: 48.884027564002565, longitude: 2.304206179918619), info: "6 h - 22 h", pmr: .pmrTrue)
     static let t354 = Pin(title: "RUE COQUILLIERE", coordinate: CLLocationCoordinate2D(latitude: 48.8635474009773, longitude: 2.342472298693266), info: "6h - 1h", pmr: .pmrTrue)
     static let t355 = Pin(title: "23  BOULEVARD DE SEBASTOPOL", coordinate: CLLocationCoordinate2D(latitude: 48.85985523410491, longitude: 2.348837230656095), info: "24 h / 24", pmr: .pmrTrue)
-    static let t356 = Pin(title: "BOULEVARD DE SEBASTOPOL", coordinate: CLLocationCoordinate2D(latitude: 48.8648280162637, longitude: 2.35161126358933), info: "6 h - 22 h", pmr: .pmrTrue)
+    static let t356 = Pin(title: "SQUARE DE LA RUE RENÉ BINET", coordinate: CLLocationCoordinate2D(latitude: 48.899535275674594, longitude: 2.338233278110479), info: "8h - 20h30", pmr: .pmrTrue)
     static let t357 = Pin(title: "RUE BOTZARIS", coordinate: CLLocationCoordinate2D(latitude: 48.87938389016798, longitude: 2.384420443356067), info: "24 h / 24", pmr: .pmrTrue)
     static let t358 = Pin(title: "PLACE DE L'ADJUDANT VINCENOT", coordinate: CLLocationCoordinate2D(latitude: 48.870690811293336, longitude: 2.409358996058923), info: "6 h - 22 h", pmr: .pmrTrue)
     static let t359 = Pin(title: "face au 28 RUE DU GENERAL GUILHEM", coordinate: CLLocationCoordinate2D(latitude: 48.86230061990073, longitude: 2.379051392752819), info: "6h - 1h", pmr: .pmrTrue)
@@ -707,7 +707,7 @@ struct Location {
     static let t597 = Pin(title: "face au 12 RUE DE BABYLONE", coordinate: CLLocationCoordinate2D(latitude: 48.851626831079074, longitude: 2.325180137951544), info: "24 h / 24", pmr: .pmrTrue)
     static let t598 = Pin(title: "44  BOULEVARD MALESHERBES", coordinate: CLLocationCoordinate2D(latitude: 48.87435840225736, longitude: 2.320451685354317), info: "6 h - 22 h", pmr: .pmrTrue)
     static let t599 = Pin(title: "face au 4 AVENUE DE MESSINE", coordinate: CLLocationCoordinate2D(latitude: 48.87541798841174, longitude: 2.315115171552737), info: "24 h / 24", pmr: .pmrTrue)
-    static let t600 = Pin(title: "BOULEVARD DE ROCHECHOUART", coordinate: CLLocationCoordinate2D(latitude: 48.882709085896316, longitude: 2.343497799728155), info: "24 h / 24", pmr: .pmrTrue)
+    static let t600 = Pin(title: "PARC DE BELLEVILLE", coordinate: CLLocationCoordinate2D(latitude: 48.87154116321315, longitude: 2.384968927744539), info: "8h - 20h30", pmr: .pmrFalse)
     
     //    Variables 601 à 615:
     static let t601 = Pin(title: "8  PLACE JACQUES BONSERGENT", coordinate: CLLocationCoordinate2D(latitude: 48.8710936939782, longitude: 2.36098426518001), info: "24 h / 24", pmr: .pmrTrue)
@@ -720,11 +720,6 @@ struct Location {
     static let t608 = Pin(title: "SQUARE HÉLOISE ET ABELARD", coordinate: CLLocationCoordinate2D(latitude: 48.831220695011346, longitude: 2.3698547770852603), info: "8h - 21h30", pmr: .pmrFalse)
     static let t609 = Pin(title: "SQUARE SERGENT AURELIE SALEL", coordinate: CLLocationCoordinate2D(latitude: 48.867159406218995, longitude: 2.391297908966135), info: "9h30 - 20h30", pmr: .pmrTrue)
     static let t610 = Pin(title: "SQUARE NICOLE DE HAUTECLOCQUE", coordinate: CLLocationCoordinate2D(latitude: 48.85258139102268, longitude: 2.293571433539884), info: "8h - 20h30", pmr: .pmrTrue)
-    static let t611 = Pin(title: "SQUARE DE LA RUE RENÉ BINET", coordinate: CLLocationCoordinate2D(latitude: 48.899535275674594, longitude: 2.338233278110479), info: "8h - 20h30", pmr: .pmrTrue)
-    static let t612 = Pin(title: "JARDIN MARIA VERONE", coordinate: CLLocationCoordinate2D(latitude: 48.897104575300425, longitude: 2.3358751815764123), info: "8h - 20h30", pmr: .pmrTrue)
-    static let t613 = Pin(title: "PARC DE BELLEVILLE", coordinate: CLLocationCoordinate2D(latitude: 48.87154116321315, longitude: 2.384968927744539), info: "8h - 20h30", pmr: .pmrFalse)
-    static let t614 = Pin(title: "JARDIN D'EOLE - ESPLANADE", coordinate: CLLocationCoordinate2D(latitude: 48.8860364099231, longitude: 2.365850908359651), info: "8h - 20h30", pmr: .pmrTrue)
-    static let t615 = Pin(title: "Sous le pont Louis Philippe", coordinate: CLLocationCoordinate2D(latitude: 48.85420227463654, longitude: 2.354644393586068), info: "10h - 18h30", pmr: .pmrTrue)
 }
 
 class Pin: NSObject, MKAnnotation {
