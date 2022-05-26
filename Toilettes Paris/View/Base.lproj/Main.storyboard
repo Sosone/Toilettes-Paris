@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                             </mapView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dv6-bB-obE">
-                                <rect key="frame" x="0.0" y="821" width="404" height="32"/>
+                                <rect key="frame" x="10" y="821" width="394" height="32"/>
                                 <segments>
                                     <segment title="Standard"/>
                                     <segment title="Satellite"/>
@@ -42,15 +42,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j0g-b9-8rU" secondAttribute="trailing" constant="10" id="4lt-Zl-Ha2"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dv6-bB-obE" secondAttribute="trailing" constant="10" id="7bW-0y-Jna"/>
-                            <constraint firstItem="v6G-Q7-0Iv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="F2M-zs-Yn7"/>
-                            <constraint firstItem="dv6-bB-obE" firstAttribute="top" secondItem="j0g-b9-8rU" secondAttribute="bottom" constant="10" id="F7k-Cb-UhN"/>
-                            <constraint firstItem="v6G-Q7-0Iv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QTs-qi-adk"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="v6G-Q7-0Iv" secondAttribute="bottom" id="ZCg-m9-ZSK"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v6G-Q7-0Iv" secondAttribute="trailing" id="e64-rr-vIk"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dv6-bB-obE" secondAttribute="bottom" constant="10" id="ko9-CQ-mft"/>
-                            <constraint firstItem="dv6-bB-obE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="w2G-et-CPH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j0g-b9-8rU" secondAttribute="trailing" constant="10" id="Bof-Wg-ZAn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dv6-bB-obE" secondAttribute="bottom" constant="10" id="DBl-uX-5GT"/>
+                            <constraint firstItem="dv6-bB-obE" firstAttribute="top" secondItem="j0g-b9-8rU" secondAttribute="bottom" constant="10" id="FGn-x0-ZFi"/>
+                            <constraint firstItem="v6G-Q7-0Iv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Yr1-Ms-xSE"/>
+                            <constraint firstItem="v6G-Q7-0Iv" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ZbC-ZY-VWV"/>
+                            <constraint firstItem="dv6-bB-obE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="aQZ-Y3-Z4o"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dv6-bB-obE" secondAttribute="trailing" constant="10" id="f5o-rH-35I"/>
+                            <constraint firstItem="v6G-Q7-0Iv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="scQ-zF-YaD"/>
+                            <constraint firstItem="v6G-Q7-0Iv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ulc-wg-dXL"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Toilettes Parisiennes" id="KX0-GC-qk8"/>
