@@ -31,9 +31,9 @@
                                 </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0g-b9-8rU">
-                                <rect key="frame" x="305" y="780" width="99" height="31"/>
+                                <rect key="frame" x="312.5" y="780" width="91.5" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="My position"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Locate me"/>
                                 <connections>
                                     <action selector="getPosition:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sTT-Er-Ucz"/>
                                 </connections>
