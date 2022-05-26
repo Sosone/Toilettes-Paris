@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        mapView.register(PinAnnotationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
         setup()
         setupLocationManager()
     }
@@ -70,22 +71,27 @@ extension ViewController: MKMapViewDelegate {
     }
     
     // enrichir les annotations
-    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        guard let annotation = annotation as? Pin else { return nil }
-        let identifier = "pin"
-        var view: MKMarkerAnnotationView
-        if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
-            as? MKMarkerAnnotationView {
-            dequeuedView.annotation = annotation
-            view = dequeuedView
-        } else {
-            view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-            view.canShowCallout = true
-            view.calloutOffset = CGPoint(x: -5, y: 5)
-            view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
-        }
-        return view
-    }
+//    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+//        guard let annotation = annotation as? Pin else { return nil }
+//        let identifier = "pin"
+//        var view: MKMarkerAnnotationView
+//        if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+//            as? MKMarkerAnnotationView {
+//            dequeuedView.annotation = annotation
+//            view = dequeuedView
+//        } else {
+//            view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+//            view.canShowCallout = true
+//            view.calloutOffset = CGPoint(x: -5, y: 5)
+//            view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+//        }
+//        if annotation.pinType.self == .pmrTrue {
+//            view.markerTintColor = .blue
+//        } else {
+//            view.markerTintColor = .red
+//        }
+//        return view
+//    }
     
     // placer le titre et l'info du Pin dans l'alerte
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
