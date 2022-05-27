@@ -8,6 +8,7 @@
 import MapKit
 import UIKit
 
+// structure of points of interest
 struct Location {
     //      the variable that contains all the variables
     static var allLocation = ([Location.t1, Location.t2, Location.t3, Location.t4, Location.t5, Location.t6, Location.t7, Location.t8, Location.t9,
@@ -685,7 +686,7 @@ struct Location {
     static let t609 = Pin(title: "SQUARE SERGENT AURELIE SALEL", coordinate: CLLocationCoordinate2D(latitude: 48.867159406218995, longitude: 2.391297908966135), info: "9h30 - 20h30", pmr: .pmrTrue)
     static let t610 = Pin(title: "SQUARE NICOLE DE HAUTECLOCQUE", coordinate: CLLocationCoordinate2D(latitude: 48.85258139102268, longitude: 2.293571433539884), info: "8h - 20h30", pmr: .pmrTrue)
 }
-
+// class with the description of the points of interest
 class Pin: NSObject, MKAnnotation {
     enum PinType: String {
         case pmrTrue = "true"
