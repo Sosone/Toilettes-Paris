@@ -34,7 +34,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "928BA6C9283CDC7D00E94711"
-               BuildableName = "Toilettes parisiennesTests.xctest"
+               BuildableName = "Toilettes ParisTests.xctest"
                BlueprintName = "Toilettes ParisTests"
                ReferencedContainer = "container:Toilettes Paris.xcodeproj">
             </BuildableReference>
@@ -44,7 +44,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "928BA6D3283CDC7D00E94711"
-               BuildableName = "Toilettes parisiennesUITests.xctest"
+               BuildableName = "Toilettes ParisUITests.xctest"
                BlueprintName = "Toilettes ParisUITests"
                ReferencedContainer = "container:Toilettes Paris.xcodeproj">
             </BuildableReference>
