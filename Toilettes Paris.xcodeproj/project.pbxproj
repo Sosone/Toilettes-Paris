@@ -152,6 +152,8 @@
 		928BA773283D051E00E94711 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9295B40E283FBB840095CEC2 /* PinAnnotationView.swift */,
+				9295B410283FC5FB0095CEC2 /* PinClusterAnnotationView.swift */,
 				928BA6BD283CDC7B00E94711 /* Main.storyboard */,
 				928BA6C2283CDC7D00E94711 /* LaunchScreen.storyboard */,
 			);
@@ -162,8 +164,6 @@
 			isa = PBXGroup;
 			children = (
 				928BA775283D057F00E94711 /* Pin.swift */,
-				9295B40E283FBB840095CEC2 /* PinAnnotationView.swift */,
-				9295B410283FC5FB0095CEC2 /* PinClusterAnnotationView.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
