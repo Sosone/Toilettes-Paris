@@ -8,9 +8,10 @@
 import UIKit
 import MapKit
 import CoreLocation
-
+// class which displays the data
 class ViewController: UIViewController {
     
+//    mapView object to display the map
     @IBOutlet weak var mapView: MKMapView!
     
     // Paris Capital of France to center the map
@@ -53,6 +54,7 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: MKMapViewDelegate {
+//    function to set the view
     func setup() {
         setupMap(coordinates: coordinateInit, myLat: 0.2, myLong: 0.2)
         mapView.showsUserLocation = true
@@ -91,6 +93,7 @@ extension ViewController: MKMapViewDelegate {
 }
 
 extension ViewController: CLLocationManagerDelegate {
+// user parameter function
     func setupLocationManager() {
         locationManager.delegate = self
         locationManager.startUpdatingHeading()
