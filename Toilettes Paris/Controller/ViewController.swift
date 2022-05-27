@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         setupLocationManager()
     }
     
-    // Change map view
+    // function to change the style of the map
     @IBAction func ChangeMapTypeButton(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 0 : mapView.mapType = MKMapType.standard
@@ -39,13 +39,13 @@ class ViewController: UIViewController {
         default: break
         }
     }
-//    Find me on the map
+//    function to find yourself on the map
     @IBAction func getPosition(_ sender: Any) {
         print("getPosition")
         if userPosition != nil {
-            setupMap(coordonnees: userPosition!.coordinate, myLat: 0.02, myLong: 0.02)
+            setupMap(coordinates: userPosition!.coordinate, myLat: 0.02, myLong: 0.02)
         } else {
-            print("nil dans getPosition")
+            print("nil in getPosition")
         }
     }
     
@@ -54,20 +54,20 @@ class ViewController: UIViewController {
 
 extension ViewController: MKMapViewDelegate {
     func setup() {
-        setupMap(coordonnees: coordinateInit, myLat: 0.2, myLong: 0.2)
+        setupMap(coordinates: coordinateInit, myLat: 0.2, myLong: 0.2)
         mapView.showsUserLocation = true
         mapView.delegate = self
         mapView.isRotateEnabled = true
         mapView.addAnnotations(Location.allLocation)
         
-        let capitalArea = MKCircle(center: coordinateInit, radius: 1000) // rayon de 1 km
-        mapView.addOverlay(capitalArea)
+        let toiletsArea = MKCircle(center: coordinateInit, radius: 1000) // toilets within a radius of one kilometer
+        mapView.addOverlay(toiletsArea)
     }
     
     // called by the "locate me" button
-    func setupMap(coordonnees: CLLocationCoordinate2D, myLat: Double, myLong: Double) {
+    func setupMap(coordinates: CLLocationCoordinate2D, myLat: Double, myLong: Double) {
         let span = MKCoordinateSpan(latitudeDelta: myLat , longitudeDelta: myLong)
-        let region = MKCoordinateRegion(center: coordonnees, span: span)
+        let region = MKCoordinateRegion(center: coordinates, span: span)
         mapView.setRegion(region, animated: true)
     }
     
@@ -82,11 +82,11 @@ extension ViewController: MKMapViewDelegate {
         present(ac, animated: true)
     }
     
-    // define an overlay
+    // function to define a radius of one kilometer around the user
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-        let capitalAreaRenderer = MKCircleRenderer(circle: overlay as! MKCircle)
-        capitalAreaRenderer.strokeColor = UIColor.lightGray
-        return capitalAreaRenderer
+        let toiletsAreaRenderer = MKCircleRenderer(circle: overlay as! MKCircle)
+        toiletsAreaRenderer.strokeColor = UIColor.lightGray
+        return toiletsAreaRenderer
     }
 }
 
@@ -97,7 +97,7 @@ extension ViewController: CLLocationManagerDelegate {
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
     }
-    
+//    function to make the application point in the same direction as the user
     func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
         mapView.camera.heading = newHeading.magneticHeading
         mapView.setCamera(mapView.camera, animated: true)
