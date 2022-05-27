@@ -9,95 +9,71 @@ import MapKit
 import UIKit
 
 struct Location {
-
+    //      the variable that contains all the variables
     static var allLocation = ([Location.t1, Location.t2, Location.t3, Location.t4, Location.t5, Location.t6, Location.t7, Location.t8, Location.t9,
-                           Location.t10,Location.t11, Location.t12, Location.t13, Location.t14, Location.t15, Location.t16, Location.t17, Location.t18, Location.t19,
-                           Location.t20, Location.t21, Location.t22, Location.t23,Location.t24, Location.t25, Location.t26, Location.t27, Location.t28, Location.t29,
-                           Location.t30, Location.t31, Location.t32, Location.t33, Location.t34, Location.t35, Location.t36, Location.t37, Location.t38, Location.t39,
-                           Location.t40, Location.t41, Location.t42, Location.t43, Location.t44, Location.t45, Location.t46, Location.t47, Location.t48, Location.t49,
-                           Location.t50, Location.t51, Location.t52, Location.t53, Location.t54, Location.t55, Location.t56, Location.t57, Location.t58, Location.t59,
-                           Location.t60, Location.t61, Location.t62, Location.t63, Location.t64, Location.t65, Location.t66, Location.t67, Location.t68, Location.t69,
-                           Location.t70, Location.t71, Location.t72, Location.t73, Location.t74, Location.t75, Location.t76, Location.t77, Location.t78, Location.t79,
-                           Location.t80, Location.t81, Location.t82, Location.t83, Location.t84, Location.t85, Location.t86, Location.t87, Location.t88, Location.t89,
-                           Location.t90, Location.t91, Location.t92, Location.t93, Location.t94, Location.t95, Location.t96, Location.t97, Location.t98, Location.t99,
-                           Location.t100,
-                               
-//                               LOC 101 À 200:
-                               
-                               Location.t101, Location.t102, Location.t103, Location.t104, Location.t105, Location.t106, Location.t107, Location.t108, Location.t109,
-                           Location.t110, Location.t111, Location.t112, Location.t113, Location.t114, Location.t115, Location.t116, Location.t117, Location.t118, Location.t119,
-                           Location.t120, Location.t121, Location.t122, Location.t123, Location.t124, Location.t125, Location.t126, Location.t127, Location.t128, Location.t129,
-                           Location.t130, Location.t131, Location.t132, Location.t133, Location.t134, Location.t135, Location.t136, Location.t137, Location.t138, Location.t139,
-                           Location.t140, Location.t141, Location.t142, Location.t143, Location.t144, Location.t145, Location.t146, Location.t147, Location.t148, Location.t149,
-                           Location.t150, Location.t151, Location.t152, Location.t153, Location.t154, Location.t155, Location.t156, Location.t157, Location.t158, Location.t159,
-                           Location.t160, Location.t161, Location.t162, Location.t163, Location.t164, Location.t165, Location.t166, Location.t167, Location.t168, Location.t169,
-                           Location.t170, Location.t171, Location.t172, Location.t173, Location.t174, Location.t175, Location.t176, Location.t177, Location.t178, Location.t179,
-                           Location.t180, Location.t181, Location.t182, Location.t183, Location.t184, Location.t185, Location.t186, Location.t187, Location.t188, Location.t189,
-                           Location.t190, Location.t191, Location.t192, Location.t193, Location.t194, Location.t195, Location.t196, Location.t197, Location.t198, Location.t199,
-                           Location.t200,
-
-//                               LOC 201 À 300:
-                               
-                               Location.t201, Location.t202, Location.t203, Location.t204, Location.t205, Location.t206, Location.t207, Location.t208, Location.t209,
-                           Location.t210, Location.t211, Location.t212, Location.t213, Location.t214, Location.t215, Location.t216, Location.t217, Location.t218, Location.t219,
-                           Location.t220, Location.t221, Location.t222, Location.t223, Location.t224, Location.t225, Location.t226, Location.t227, Location.t228, Location.t229,
-                           Location.t230, Location.t231, Location.t232, Location.t233, Location.t234, Location.t235, Location.t236, Location.t237, Location.t238, Location.t239,
-                           Location.t240, Location.t241, Location.t242, Location.t243, Location.t244, Location.t245, Location.t246, Location.t247, Location.t248, Location.t249,
-                           Location.t250, Location.t251, Location.t252, Location.t253, Location.t254, Location.t255, Location.t256, Location.t257, Location.t258, Location.t259,
-                           Location.t260, Location.t261, Location.t262, Location.t263, Location.t264, Location.t265, Location.t266, Location.t267, Location.t268, Location.t269,
-                           Location.t270, Location.t271, Location.t272, Location.t273, Location.t274, Location.t275, Location.t276, Location.t277, Location.t278, Location.t279,
-                           Location.t280, Location.t281, Location.t282, Location.t283, Location.t284, Location.t285, Location.t286, Location.t287, Location.t288, Location.t289,
-                           Location.t290, Location.t291, Location.t292, Location.t293, Location.t294, Location.t295, Location.t296, Location.t297, Location.t298, Location.t299,
-                           Location.t300,
-                               
-//                               LOC 301 À 400:
-                               
-                               Location.t301, Location.t302, Location.t303, Location.t304, Location.t305, Location.t306, Location.t307, Location.t308, Location.t309,
-                           Location.t310, Location.t311, Location.t312, Location.t313, Location.t314, Location.t315, Location.t316, Location.t317, Location.t318, Location.t319,
-                           Location.t320, Location.t321, Location.t322, Location.t323, Location.t324, Location.t325, Location.t326, Location.t327, Location.t328, Location.t329,
-                           Location.t330, Location.t331, Location.t332, Location.t333, Location.t334, Location.t335, Location.t336, Location.t337, Location.t338, Location.t339,
-                           Location.t340, Location.t341, Location.t342, Location.t343, Location.t344, Location.t345, Location.t346, Location.t347, Location.t348, Location.t349,
-                           Location.t350, Location.t351, Location.t352, Location.t353, Location.t354, Location.t355, Location.t356, Location.t357, Location.t358, Location.t359,
-                           Location.t360, Location.t361, Location.t362, Location.t363, Location.t364, Location.t365, Location.t366, Location.t367, Location.t368, Location.t369,
-                           Location.t370, Location.t371, Location.t372, Location.t373, Location.t374, Location.t375, Location.t376, Location.t377, Location.t378, Location.t379,
-                           Location.t380, Location.t381, Location.t382, Location.t383, Location.t384, Location.t385, Location.t386, Location.t387, Location.t388, Location.t389,
-                           Location.t390, Location.t391, Location.t392, Location.t393, Location.t394, Location.t395, Location.t396, Location.t397, Location.t398, Location.t399,
-                           Location.t400,
-                               
-//                               LOC 401 À 500:
-                               
-                               Location.t401, Location.t402, Location.t403, Location.t404, Location.t405, Location.t406, Location.t407, Location.t408, Location.t409,
-                           Location.t410, Location.t411, Location.t412, Location.t413, Location.t414, Location.t415, Location.t416, Location.t417, Location.t418, Location.t419,
-                           Location.t420, Location.t421, Location.t422, Location.t423, Location.t424, Location.t425, Location.t426, Location.t427, Location.t428, Location.t429,
-                           Location.t430, Location.t431, Location.t432, Location.t433, Location.t434, Location.t435, Location.t436, Location.t437, Location.t438, Location.t439,
-                           Location.t440, Location.t441, Location.t442, Location.t443, Location.t444, Location.t445, Location.t446, Location.t447, Location.t448, Location.t449,
-                           Location.t450, Location.t451, Location.t452, Location.t453, Location.t454, Location.t455, Location.t456, Location.t457, Location.t458, Location.t459,
-                           Location.t460, Location.t461, Location.t462, Location.t463, Location.t464, Location.t465, Location.t466, Location.t467, Location.t468, Location.t469,
-                           Location.t470, Location.t471, Location.t472, Location.t473, Location.t474, Location.t475, Location.t476, Location.t477, Location.t478, Location.t479,
-                           Location.t480, Location.t481, Location.t482, Location.t483, Location.t484, Location.t485, Location.t486, Location.t487, Location.t488, Location.t489,
-                           Location.t490, Location.t491, Location.t492, Location.t493, Location.t494, Location.t495, Location.t496, Location.t497, Location.t498, Location.t499,
-                           Location.t500,
-                               
-//                               LOC 501 À 600:
-                               
-                               Location.t501, Location.t502, Location.t503, Location.t504, Location.t505, Location.t506, Location.t507, Location.t508, Location.t509,
-                           Location.t510, Location.t511, Location.t512, Location.t513, Location.t514, Location.t515, Location.t516, Location.t517, Location.t518, Location.t519,
-                           Location.t520, Location.t521, Location.t522, Location.t523, Location.t524, Location.t525, Location.t526, Location.t527, Location.t528, Location.t529,
-                           Location.t530, Location.t531, Location.t532, Location.t533, Location.t534, Location.t535, Location.t536, Location.t537, Location.t538, Location.t539,
-                           Location.t540, Location.t541, Location.t542, Location.t543, Location.t544, Location.t545, Location.t546, Location.t547, Location.t548, Location.t549,
-                           Location.t550, Location.t551, Location.t552, Location.t553, Location.t554, Location.t555, Location.t556, Location.t557, Location.t558, Location.t559,
-                           Location.t560, Location.t561, Location.t562, Location.t563, Location.t564, Location.t565, Location.t566, Location.t567, Location.t568, Location.t569,
-                           Location.t570, Location.t571, Location.t572, Location.t573, Location.t574, Location.t575, Location.t576, Location.t577, Location.t578, Location.t579,
-                           Location.t580, Location.t581, Location.t582, Location.t583, Location.t584, Location.t585, Location.t586, Location.t587, Location.t588, Location.t589,
-                           Location.t590, Location.t591, Location.t592, Location.t593, Location.t594, Location.t595, Location.t596, Location.t597, Location.t598, Location.t599,
-                           Location.t600,
-                               
-//                               LOC 601 À 610:
-                                                             
-                               Location.t601, Location.t602, Location.t603, Location.t604, Location.t605, Location.t606, Location.t607, Location.t608, Location.t609,
-                               Location.t610])
+               Location.t10,Location.t11, Location.t12, Location.t13, Location.t14, Location.t15, Location.t16, Location.t17, Location.t18, Location.t19,
+               Location.t20, Location.t21, Location.t22, Location.t23,Location.t24, Location.t25, Location.t26, Location.t27, Location.t28, Location.t29,
+               Location.t30, Location.t31, Location.t32, Location.t33, Location.t34, Location.t35, Location.t36, Location.t37, Location.t38, Location.t39,
+               Location.t40, Location.t41, Location.t42, Location.t43, Location.t44, Location.t45, Location.t46, Location.t47, Location.t48, Location.t49,
+               Location.t50, Location.t51, Location.t52, Location.t53, Location.t54, Location.t55, Location.t56, Location.t57, Location.t58, Location.t59,
+               Location.t60, Location.t61, Location.t62, Location.t63, Location.t64, Location.t65, Location.t66, Location.t67, Location.t68, Location.t69,
+               Location.t70, Location.t71, Location.t72, Location.t73, Location.t74, Location.t75, Location.t76, Location.t77, Location.t78, Location.t79,
+               Location.t80, Location.t81, Location.t82, Location.t83, Location.t84, Location.t85, Location.t86, Location.t87, Location.t88, Location.t89,
+               Location.t90, Location.t91, Location.t92, Location.t93, Location.t94, Location.t95, Location.t96, Location.t97, Location.t98, Location.t99,
+               Location.t100, Location.t101, Location.t102, Location.t103, Location.t104, Location.t105, Location.t106, Location.t107, Location.t108, Location.t109,
+               Location.t110, Location.t111, Location.t112, Location.t113, Location.t114, Location.t115, Location.t116, Location.t117, Location.t118, Location.t119,
+               Location.t120, Location.t121, Location.t122, Location.t123, Location.t124, Location.t125, Location.t126, Location.t127, Location.t128, Location.t129,
+               Location.t130, Location.t131, Location.t132, Location.t133, Location.t134, Location.t135, Location.t136, Location.t137, Location.t138, Location.t139,
+               Location.t140, Location.t141, Location.t142, Location.t143, Location.t144, Location.t145, Location.t146, Location.t147, Location.t148, Location.t149,
+               Location.t150, Location.t151, Location.t152, Location.t153, Location.t154, Location.t155, Location.t156, Location.t157, Location.t158, Location.t159,
+               Location.t160, Location.t161, Location.t162, Location.t163, Location.t164, Location.t165, Location.t166, Location.t167, Location.t168, Location.t169,
+               Location.t170, Location.t171, Location.t172, Location.t173, Location.t174, Location.t175, Location.t176, Location.t177, Location.t178, Location.t179,
+               Location.t180, Location.t181, Location.t182, Location.t183, Location.t184, Location.t185, Location.t186, Location.t187, Location.t188, Location.t189,
+               Location.t190, Location.t191, Location.t192, Location.t193, Location.t194, Location.t195, Location.t196, Location.t197, Location.t198, Location.t199,
+               Location.t200, Location.t201, Location.t202, Location.t203, Location.t204, Location.t205, Location.t206, Location.t207, Location.t208, Location.t209,
+               Location.t210, Location.t211, Location.t212, Location.t213, Location.t214, Location.t215, Location.t216, Location.t217, Location.t218, Location.t219,
+               Location.t220, Location.t221, Location.t222, Location.t223, Location.t224, Location.t225, Location.t226, Location.t227, Location.t228, Location.t229,
+               Location.t230, Location.t231, Location.t232, Location.t233, Location.t234, Location.t235, Location.t236, Location.t237, Location.t238, Location.t239,
+               Location.t240, Location.t241, Location.t242, Location.t243, Location.t244, Location.t245, Location.t246, Location.t247, Location.t248, Location.t249,
+               Location.t250, Location.t251, Location.t252, Location.t253, Location.t254, Location.t255, Location.t256, Location.t257, Location.t258, Location.t259,
+               Location.t260, Location.t261, Location.t262, Location.t263, Location.t264, Location.t265, Location.t266, Location.t267, Location.t268, Location.t269,
+               Location.t270, Location.t271, Location.t272, Location.t273, Location.t274, Location.t275, Location.t276, Location.t277, Location.t278, Location.t279,
+               Location.t280, Location.t281, Location.t282, Location.t283, Location.t284, Location.t285, Location.t286, Location.t287, Location.t288, Location.t289,
+               Location.t290, Location.t291, Location.t292, Location.t293, Location.t294, Location.t295, Location.t296, Location.t297, Location.t298, Location.t299,
+               Location.t300, Location.t301, Location.t302, Location.t303, Location.t304, Location.t305, Location.t306, Location.t307, Location.t308, Location.t309,
+               Location.t310, Location.t311, Location.t312, Location.t313, Location.t314, Location.t315, Location.t316, Location.t317, Location.t318, Location.t319,
+               Location.t320, Location.t321, Location.t322, Location.t323, Location.t324, Location.t325, Location.t326, Location.t327, Location.t328, Location.t329,
+               Location.t330, Location.t331, Location.t332, Location.t333, Location.t334, Location.t335, Location.t336, Location.t337, Location.t338, Location.t339,
+               Location.t340, Location.t341, Location.t342, Location.t343, Location.t344, Location.t345, Location.t346, Location.t347, Location.t348, Location.t349,
+               Location.t350, Location.t351, Location.t352, Location.t353, Location.t354, Location.t355, Location.t356, Location.t357, Location.t358, Location.t359,
+               Location.t360, Location.t361, Location.t362, Location.t363, Location.t364, Location.t365, Location.t366, Location.t367, Location.t368, Location.t369,
+               Location.t370, Location.t371, Location.t372, Location.t373, Location.t374, Location.t375, Location.t376, Location.t377, Location.t378, Location.t379,
+               Location.t380, Location.t381, Location.t382, Location.t383, Location.t384, Location.t385, Location.t386, Location.t387, Location.t388, Location.t389,
+               Location.t390, Location.t391, Location.t392, Location.t393, Location.t394, Location.t395, Location.t396, Location.t397, Location.t398, Location.t399,
+               Location.t400, Location.t401, Location.t402, Location.t403, Location.t404, Location.t405, Location.t406, Location.t407, Location.t408, Location.t409,
+               Location.t410, Location.t411, Location.t412, Location.t413, Location.t414, Location.t415, Location.t416, Location.t417, Location.t418, Location.t419,
+               Location.t420, Location.t421, Location.t422, Location.t423, Location.t424, Location.t425, Location.t426, Location.t427, Location.t428, Location.t429,
+               Location.t430, Location.t431, Location.t432, Location.t433, Location.t434, Location.t435, Location.t436, Location.t437, Location.t438, Location.t439,
+               Location.t440, Location.t441, Location.t442, Location.t443, Location.t444, Location.t445, Location.t446, Location.t447, Location.t448, Location.t449,
+               Location.t450, Location.t451, Location.t452, Location.t453, Location.t454, Location.t455, Location.t456, Location.t457, Location.t458, Location.t459,
+               Location.t460, Location.t461, Location.t462, Location.t463, Location.t464, Location.t465, Location.t466, Location.t467, Location.t468, Location.t469,
+               Location.t470, Location.t471, Location.t472, Location.t473, Location.t474, Location.t475, Location.t476, Location.t477, Location.t478, Location.t479,
+               Location.t480, Location.t481, Location.t482, Location.t483, Location.t484, Location.t485, Location.t486, Location.t487, Location.t488, Location.t489,
+               Location.t490, Location.t491, Location.t492, Location.t493, Location.t494, Location.t495, Location.t496, Location.t497, Location.t498, Location.t499,
+               Location.t500, Location.t501, Location.t502, Location.t503, Location.t504, Location.t505, Location.t506, Location.t507, Location.t508, Location.t509,
+               Location.t510, Location.t511, Location.t512, Location.t513, Location.t514, Location.t515, Location.t516, Location.t517, Location.t518, Location.t519,
+               Location.t520, Location.t521, Location.t522, Location.t523, Location.t524, Location.t525, Location.t526, Location.t527, Location.t528, Location.t529,
+               Location.t530, Location.t531, Location.t532, Location.t533, Location.t534, Location.t535, Location.t536, Location.t537, Location.t538, Location.t539,
+               Location.t540, Location.t541, Location.t542, Location.t543, Location.t544, Location.t545, Location.t546, Location.t547, Location.t548, Location.t549,
+               Location.t550, Location.t551, Location.t552, Location.t553, Location.t554, Location.t555, Location.t556, Location.t557, Location.t558, Location.t559,
+               Location.t560, Location.t561, Location.t562, Location.t563, Location.t564, Location.t565, Location.t566, Location.t567, Location.t568, Location.t569,
+               Location.t570, Location.t571, Location.t572, Location.t573, Location.t574, Location.t575, Location.t576, Location.t577, Location.t578, Location.t579,
+               Location.t580, Location.t581, Location.t582, Location.t583, Location.t584, Location.t585, Location.t586, Location.t587, Location.t588, Location.t589,
+               Location.t590, Location.t591, Location.t592, Location.t593, Location.t594, Location.t595, Location.t596, Location.t597, Location.t598, Location.t599,
+               Location.t600, Location.t601, Location.t602, Location.t603, Location.t604, Location.t605, Location.t606, Location.t607, Location.t608, Location.t609,
+               Location.t610])
     
-    //    Variables 1 à 100:
+    //    the variables with their names, longitude, latitude, information, disabled access (1 to 610)
     static let t1 = Pin(title: "4 place de Breteuil", coordinate: CLLocationCoordinate2D(latitude: 48.84733413997167, longitude: 2.3109598986410163), info: "6h - 22h", pmr: .pmrTrue)
     static let t2 = Pin(title: "BOULEVARD GARIBALDI", coordinate: CLLocationCoordinate2D(latitude: 48.8478417919066, longitude: 2.302072031091217), info: "6h - 22h", pmr: .pmrTrue)
     static let t3 =  Pin(title: "B3  RUE DE LA GOUTTE D OR", coordinate: CLLocationCoordinate2D(latitude: 48.885028142206096, longitude: 2.354863996144927), info: "6h - 00h", pmr: .pmrTrue)
@@ -198,8 +174,6 @@ struct Location {
     static let t98 = Pin(title: "SQUARE CLAUDE BERNARD", coordinate: CLLocationCoordinate2D(latitude: 48.899251737173394, longitude: 2.374464613571059), info: "9h30 - 21h30", pmr: .pmrTrue)
     static let t99 = Pin(title: "BOIS DE VINCENNES - PLATEAU DE SAINT-MANDE", coordinate: CLLocationCoordinate2D(latitude: 48.84310448292203, longitude: 2.420418982190451), info: "9h30 - 20h", pmr: .pmrTrue)
     static let t100 = Pin(title: "9  QUAI LOUIS BLERIOT", coordinate: CLLocationCoordinate2D(latitude: 48.85083039519224, longitude: 2.277890989978299), info: "6 h - 22 h", pmr: .pmrTrue)
-    
-//    Variables 101 à 200:
     static let t101 = Pin(title: "face au 21 AVENUE DU GENERAL SARRAIL", coordinate: CLLocationCoordinate2D(latitude: 48.845813121421486, longitude: 2.255987040827983), info: "6 h - 22 h", pmr: .pmrTrue)
     static let t102 = Pin(title: "16  AVENUE DU PARC DES PRINCES", coordinate: CLLocationCoordinate2D(latitude: 48.84122995590826, longitude: 2.254610908740306), info: "6 h - 22 h", pmr: .pmrTrue)
     static let t103 = Pin(title: "220  BOULEVARD DE LA VILLETTE", coordinate: CLLocationCoordinate2D(latitude: 48.88425702092837, longitude: 2.367381050280597), info: "6 h - 22 h", pmr: .pmrTrue)
@@ -300,8 +274,6 @@ struct Location {
     static let t198 = Pin(title: "17  RUE DU FOUR", coordinate: CLLocationCoordinate2D(latitude: 48.85272198682075, longitude: 2.334590272454289), info: "24h / 24", pmr: .pmrTrue)
     static let t199 = Pin(title: "COUR LA REINE", coordinate: CLLocationCoordinate2D(latitude: 48.86514883797138, longitude: 2.318088034663091), info: "24h / 24", pmr: .pmrTrue)
     static let t200 = Pin(title: "opposé au 44 AVENUE GABRIEL", coordinate: CLLocationCoordinate2D(latitude: 48.869470956238764, longitude: 2.31276020722228), info: "24h / 24", pmr: .pmrTrue)
-    
-    //    Variables 201 à 300:
     static let t201 = Pin(title: "face au 19 AVENUE DE FRIEDLAND", coordinate: CLLocationCoordinate2D(latitude: 48.874613485017605, longitude: 2.302361992982482), info: "24 h / 24", pmr: .pmrTrue)
     static let t202 = Pin(title: "12  RUE REBEVAL", coordinate: CLLocationCoordinate2D(latitude: 48.87407067949223, longitude: 2.376382294517342), info: "6 h - 22 h", pmr: .pmrTrue)
     static let t203 = Pin(title: "2  RUE DES ECLUSES SAINT MARTIN", coordinate: CLLocationCoordinate2D(latitude: 48.876238731757724, longitude: 2.368177603725198), info: "6 h - 1 h", pmr: .pmrTrue)
@@ -402,8 +374,6 @@ struct Location {
     static let t298 = Pin(title: "face au 148 BOULEVARD DE MENILMONTANT", coordinate: CLLocationCoordinate2D(latitude: 48.86675503488674, longitude: 2.383389726625512), info: "24h / 24", pmr: .pmrTrue)
     static let t299 = Pin(title: "34  BOULEVARD DE BELLEVILLE", coordinate: CLLocationCoordinate2D(latitude: 48.86834301160021, longitude: 2.381897995848262), info: "6 h - 22 h", pmr: .pmrTrue)
     static let t300 = Pin(title: "131  RUE D AVRON", coordinate: CLLocationCoordinate2D(latitude: 48.85331628203856, longitude: 2.409258092200667), info: "6 h - 22 h", pmr: .pmrTrue)
-
-    //    Variables 301 à 400:
     static let t301 = Pin(title: "118  BOULEVARD DE LA VILLETTE", coordinate: CLLocationCoordinate2D(latitude: 48.87736769831583, longitude: 2.3709710108818243), info: "6 h - 22 h", pmr: .pmrTrue)
     static let t302 = Pin(title: "RUE ROBERT BLACHE", coordinate: CLLocationCoordinate2D(latitude: 48.87701431314924, longitude: 2.363990501903871), info: "6 h - 1 h", pmr: .pmrTrue)
     static let t303 = Pin(title: "face au 50 QUAI DE JEMMAPES", coordinate: CLLocationCoordinate2D(latitude: 48.87002790121456, longitude: 2.36659750721216), info: "24h / 24", pmr: .pmrTrue)
@@ -504,8 +474,6 @@ struct Location {
     static let t398 = Pin(title: "14  RUE SAINT MARTIN", coordinate: CLLocationCoordinate2D(latitude: 48.858200967363395, longitude: 2.349797594005607), info: "24 h / 24", pmr: .pmrTrue)
     static let t399 = Pin(title: "face au 50 RUE DE RIVOLI", coordinate: CLLocationCoordinate2D(latitude: 48.85678942451888, longitude: 2.354183092290366), info: "24 h / 24", pmr: .pmrTrue)
     static let t400 = Pin(title: "8  RUE JEAN CALVIN", coordinate: CLLocationCoordinate2D(latitude: 48.8416407780507, longitude: 2.348691572286761), info: "24 h / 24", pmr: .pmrTrue)
-    
-    //    Variables 401 à 500:
     static let t401 = Pin(title: "face au 196 BOULEVARD DE LA VILLETTE", coordinate: CLLocationCoordinate2D(latitude: 48.882213723425714, longitude: 2.370336342149233), info: "24 h / 24", pmr: .pmrTrue)
     static let t402 = Pin(title: "RUE CESARIA EVORA", coordinate: CLLocationCoordinate2D(latitude: 48.89769666177365, longitude: 2.377469825874642), info: "6 h - 22 h", pmr: .pmrTrue)
     static let t403 = Pin(title: "105  QUAI DE VALMY", coordinate: CLLocationCoordinate2D(latitude: 48.87459203532375, longitude: 2.362733834933867), info: "6 h - 22 h", pmr: .pmrTrue)
@@ -606,8 +574,6 @@ struct Location {
     static let t498 = Pin(title: "face au 3 RUE MARCEL SEMBAT", coordinate: CLLocationCoordinate2D(latitude: 48.899016851977834, longitude: 2.337690977054359), info: "24 h / 24", pmr: .pmrTrue)
     static let t499 = Pin(title: "6  RUE DE PANAMA", coordinate: CLLocationCoordinate2D(latitude: 48.88762677637511, longitude: 2.352751478367211), info: "6 h - 22 h", pmr: .pmrTrue)
     static let t500 = Pin(title: "opposé au 35 RUE BOINOD", coordinate: CLLocationCoordinate2D(latitude: 48.894130055640744, longitude: 2.351762865066177), info: "6 h - 22 h", pmr: .pmrTrue)
-    
-    //    Variables 501 à 600:
     static let t501 = Pin(title: "68  QUAI DE LA LOIRE", coordinate: CLLocationCoordinate2D(latitude: 48.88659728582067, longitude: 2.377159137352045), info: "6 h - 22 h", pmr: .pmrTrue)
     static let t502 = Pin(title: "9  RUE COQUILLIERE", coordinate: CLLocationCoordinate2D(latitude: 48.8635474009773, longitude: 2.342472298693266), info: "6 h - 1 h", pmr: .pmrTrue)
     static let t503 = Pin(title: "face au 2 RUE AUBRY LE BOUCHER", coordinate: CLLocationCoordinate2D(latitude: 48.86021286930935, longitude: 2.350397746470584), info: "24 h / 24", pmr: .pmrTrue)
@@ -708,8 +674,6 @@ struct Location {
     static let t598 = Pin(title: "44  BOULEVARD MALESHERBES", coordinate: CLLocationCoordinate2D(latitude: 48.87435840225736, longitude: 2.320451685354317), info: "6 h - 22 h", pmr: .pmrTrue)
     static let t599 = Pin(title: "face au 4 AVENUE DE MESSINE", coordinate: CLLocationCoordinate2D(latitude: 48.87541798841174, longitude: 2.315115171552737), info: "24 h / 24", pmr: .pmrTrue)
     static let t600 = Pin(title: "PARC DE BELLEVILLE", coordinate: CLLocationCoordinate2D(latitude: 48.87154116321315, longitude: 2.384968927744539), info: "8h - 20h30", pmr: .pmrFalse)
-    
-    //    Variables 601 à 615:
     static let t601 = Pin(title: "8  PLACE JACQUES BONSERGENT", coordinate: CLLocationCoordinate2D(latitude: 48.8710936939782, longitude: 2.36098426518001), info: "24 h / 24", pmr: .pmrTrue)
     static let t602 = Pin(title: "25  BOULEVARD DE LA VILLETTE", coordinate: CLLocationCoordinate2D(latitude: 48.87348074198408, longitude: 2.375281769902509), info: "6 h - 22 h", pmr: .pmrTrue)
     static let t603 = Pin(title: "face au 1 BOULEVARD DE LA VILLETTE", coordinate: CLLocationCoordinate2D(latitude: 48.8722796194314, longitude: 2.376627952756624), info: "24 h / 24", pmr: .pmrTrue)
