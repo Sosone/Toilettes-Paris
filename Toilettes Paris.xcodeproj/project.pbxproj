@@ -39,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		928BA6B4283CDC7B00E94711 /* Toilettes-Paris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Toilettes-Paris.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		928BA6B4283CDC7B00E94711 /* Toilettes Paris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Toilettes Paris.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		928BA6B7283CDC7B00E94711 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		928BA6B9283CDC7B00E94711 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		928BA6BB283CDC7B00E94711 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 		928BA6B5283CDC7B00E94711 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				928BA6B4283CDC7B00E94711 /* Toilettes-Paris.app */,
+				928BA6B4283CDC7B00E94711 /* Toilettes Paris.app */,
 				928BA6CA283CDC7D00E94711 /* Toilettes ParisTests.xctest */,
 				928BA6D4283CDC7D00E94711 /* Toilettes ParisUITests.xctest */,
 			);
@@ -185,7 +185,7 @@
 			);
 			name = "Toilettes Paris";
 			productName = "Toilettes Paris";
-			productReference = 928BA6B4283CDC7B00E94711 /* Toilettes-Paris.app */;
+			productReference = 928BA6B4283CDC7B00E94711 /* Toilettes Paris.app */;
 			productType = "com.apple.product-type.application";
 		};
 		928BA6C9283CDC7D00E94711 /* Toilettes ParisTests */ = {
@@ -486,9 +486,6 @@
 				DEVELOPMENT_TEAM = ZK85DCR84C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Toilettes Paris/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Toilettes parisiennes";
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "The device wants to access your location";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "The device wants to access your location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -500,7 +497,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Sosonevsthemachine.Toilettes-Paris";
-				PRODUCT_NAME = "Toilettes-Paris";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -517,9 +514,6 @@
 				DEVELOPMENT_TEAM = ZK85DCR84C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Toilettes Paris/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Toilettes parisiennes";
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "The device wants to access your location";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "The device wants to access your location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -531,7 +525,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Sosonevsthemachine.Toilettes-Paris";
-				PRODUCT_NAME = "Toilettes-Paris";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
