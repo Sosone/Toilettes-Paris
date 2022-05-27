@@ -47,9 +47,9 @@
 		928BA6C0283CDC7D00E94711 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		928BA6C3283CDC7D00E94711 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		928BA6C5283CDC7D00E94711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		928BA6CA283CDC7D00E94711 /* Toilettes parisiennesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Toilettes parisiennesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		928BA6CA283CDC7D00E94711 /* Toilettes ParisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Toilettes ParisTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		928BA6CE283CDC7D00E94711 /* Toilettes_ParisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toilettes_ParisTests.swift; sourceTree = "<group>"; };
-		928BA6D4283CDC7D00E94711 /* Toilettes parisiennesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Toilettes parisiennesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		928BA6D4283CDC7D00E94711 /* Toilettes ParisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Toilettes ParisUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		928BA6D8283CDC7D00E94711 /* Toilettes_ParisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toilettes_ParisUITests.swift; sourceTree = "<group>"; };
 		928BA6DA283CDC7D00E94711 /* Toilettes_ParisUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toilettes_ParisUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		928BA775283D057F00E94711 /* Pin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pin.swift; sourceTree = "<group>"; };
@@ -96,8 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				928BA6B4283CDC7B00E94711 /* Toilettes-Paris.app */,
-				928BA6CA283CDC7D00E94711 /* Toilettes parisiennesTests.xctest */,
-				928BA6D4283CDC7D00E94711 /* Toilettes parisiennesUITests.xctest */,
+				928BA6CA283CDC7D00E94711 /* Toilettes ParisTests.xctest */,
+				928BA6D4283CDC7D00E94711 /* Toilettes ParisUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,9 +171,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		928BA6B3283CDC7B00E94711 /* Toilettes parisiennes */ = {
+		928BA6B3283CDC7B00E94711 /* Toilettes Paris */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 928BA6DE283CDC7D00E94711 /* Build configuration list for PBXNativeTarget "Toilettes parisiennes" */;
+			buildConfigurationList = 928BA6DE283CDC7D00E94711 /* Build configuration list for PBXNativeTarget "Toilettes Paris" */;
 			buildPhases = (
 				928BA6B0283CDC7B00E94711 /* Sources */,
 				928BA6B1283CDC7B00E94711 /* Frameworks */,
@@ -183,14 +183,14 @@
 			);
 			dependencies = (
 			);
-			name = "Toilettes parisiennes";
+			name = "Toilettes Paris";
 			productName = "Toilettes Paris";
 			productReference = 928BA6B4283CDC7B00E94711 /* Toilettes-Paris.app */;
 			productType = "com.apple.product-type.application";
 		};
-		928BA6C9283CDC7D00E94711 /* Toilettes parisiennesTests */ = {
+		928BA6C9283CDC7D00E94711 /* Toilettes ParisTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 928BA6E1283CDC7D00E94711 /* Build configuration list for PBXNativeTarget "Toilettes parisiennesTests" */;
+			buildConfigurationList = 928BA6E1283CDC7D00E94711 /* Build configuration list for PBXNativeTarget "Toilettes ParisTests" */;
 			buildPhases = (
 				928BA6C6283CDC7D00E94711 /* Sources */,
 				928BA6C7283CDC7D00E94711 /* Frameworks */,
@@ -201,14 +201,14 @@
 			dependencies = (
 				928BA6CC283CDC7D00E94711 /* PBXTargetDependency */,
 			);
-			name = "Toilettes parisiennesTests";
+			name = "Toilettes ParisTests";
 			productName = "Toilettes ParisTests";
-			productReference = 928BA6CA283CDC7D00E94711 /* Toilettes parisiennesTests.xctest */;
+			productReference = 928BA6CA283CDC7D00E94711 /* Toilettes ParisTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		928BA6D3283CDC7D00E94711 /* Toilettes parisiennesUITests */ = {
+		928BA6D3283CDC7D00E94711 /* Toilettes ParisUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 928BA6E4283CDC7D00E94711 /* Build configuration list for PBXNativeTarget "Toilettes parisiennesUITests" */;
+			buildConfigurationList = 928BA6E4283CDC7D00E94711 /* Build configuration list for PBXNativeTarget "Toilettes ParisUITests" */;
 			buildPhases = (
 				928BA6D0283CDC7D00E94711 /* Sources */,
 				928BA6D1283CDC7D00E94711 /* Frameworks */,
@@ -219,9 +219,9 @@
 			dependencies = (
 				928BA6D6283CDC7D00E94711 /* PBXTargetDependency */,
 			);
-			name = "Toilettes parisiennesUITests";
+			name = "Toilettes ParisUITests";
 			productName = "Toilettes ParisUITests";
-			productReference = 928BA6D4283CDC7D00E94711 /* Toilettes parisiennesUITests.xctest */;
+			productReference = 928BA6D4283CDC7D00E94711 /* Toilettes ParisUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -247,7 +247,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 928BA6AF283CDC7B00E94711 /* Build configuration list for PBXProject "Toilettes parisiennes" */;
+			buildConfigurationList = 928BA6AF283CDC7B00E94711 /* Build configuration list for PBXProject "Toilettes Paris" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -260,9 +260,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				928BA6B3283CDC7B00E94711 /* Toilettes parisiennes */,
-				928BA6C9283CDC7D00E94711 /* Toilettes parisiennesTests */,
-				928BA6D3283CDC7D00E94711 /* Toilettes parisiennesUITests */,
+				928BA6B3283CDC7B00E94711 /* Toilettes Paris */,
+				928BA6C9283CDC7D00E94711 /* Toilettes ParisTests */,
+				928BA6D3283CDC7D00E94711 /* Toilettes ParisUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -330,12 +330,12 @@
 /* Begin PBXTargetDependency section */
 		928BA6CC283CDC7D00E94711 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 928BA6B3283CDC7B00E94711 /* Toilettes parisiennes */;
+			target = 928BA6B3283CDC7B00E94711 /* Toilettes Paris */;
 			targetProxy = 928BA6CB283CDC7D00E94711 /* PBXContainerItemProxy */;
 		};
 		928BA6D6283CDC7D00E94711 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 928BA6B3283CDC7B00E94711 /* Toilettes parisiennes */;
+			target = 928BA6B3283CDC7B00E94711 /* Toilettes Paris */;
 			targetProxy = 928BA6D5283CDC7D00E94711 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -559,7 +559,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Toilettes parisiennes.app/Toilettes parisiennes";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Toilettes Paris.app/Toilettes Paris";
 			};
 			name = Debug;
 		};
@@ -584,7 +584,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Toilettes parisiennes.app/Toilettes parisiennes";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Toilettes Paris.app/Toilettes Paris";
 			};
 			name = Release;
 		};
@@ -637,7 +637,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		928BA6AF283CDC7B00E94711 /* Build configuration list for PBXProject "Toilettes parisiennes" */ = {
+		928BA6AF283CDC7B00E94711 /* Build configuration list for PBXProject "Toilettes Paris" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				928BA6DC283CDC7D00E94711 /* Debug */,
@@ -646,7 +646,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		928BA6DE283CDC7D00E94711 /* Build configuration list for PBXNativeTarget "Toilettes parisiennes" */ = {
+		928BA6DE283CDC7D00E94711 /* Build configuration list for PBXNativeTarget "Toilettes Paris" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				928BA6DF283CDC7D00E94711 /* Debug */,
@@ -655,7 +655,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		928BA6E1283CDC7D00E94711 /* Build configuration list for PBXNativeTarget "Toilettes parisiennesTests" */ = {
+		928BA6E1283CDC7D00E94711 /* Build configuration list for PBXNativeTarget "Toilettes ParisTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				928BA6E2283CDC7D00E94711 /* Debug */,
@@ -664,7 +664,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		928BA6E4283CDC7D00E94711 /* Build configuration list for PBXNativeTarget "Toilettes parisiennesUITests" */ = {
+		928BA6E4283CDC7D00E94711 /* Build configuration list for PBXNativeTarget "Toilettes ParisUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				928BA6E5283CDC7D00E94711 /* Debug */,
