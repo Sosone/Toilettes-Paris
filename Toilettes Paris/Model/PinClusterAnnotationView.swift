@@ -19,11 +19,11 @@ class PinClusterAnnotationView: MKAnnotationView {
                     }.count
                 print(pmrCount)
                 image = renderer.image { _ in
-                    // Fill full circle with parc color
+                    // Fill full circle with pmrFalse color
                     UIColor.blue.setFill()
                     UIBezierPath(ovalIn: CGRect(x: 0, y: 0, width: 40, height: 40)).fill()
                     
-                    // Fill pie with plage color
+                    // Fill pie with pmrTrue color
                     UIColor.red.setFill()
                     let piePath = UIBezierPath()
                     piePath.addArc(withCenter: CGPoint(x: 20, y: 20), radius: 20,
