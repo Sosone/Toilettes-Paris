@@ -4,7 +4,7 @@
 //
 //  Created by Anthony Laurent on 24/05/2022.
 //
-
+import Alamofire
 import UIKit
 import MapKit
 import CoreLocation
@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
     
     // Paris Capital of France to center the map
+    // TODO: use private if necessary
     var latitudeInit: Double = 48.856614
     var longitudeInit: Double = 2.3522219
     var coordinateInit :  CLLocationCoordinate2D {
@@ -23,6 +24,8 @@ class ViewController: UIViewController {
     let locationManager = CLLocationManager()
     var userPosition: CLLocation?
     
+    var toilets = [Toilet]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView.register(PinAnnotationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
@@ -30,6 +33,38 @@ class ViewController: UIViewController {
         setup()
         setupLocationManager()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        ToiletService.shared.loadAll(callback: self.loadingEnded)
+    }
+    
+    private func loadingEnded(success: Bool, toilets: [Toilet]?)
+    {
+        if success
+        {
+            var pins = [Pin]()
+            toilets?.forEach { element in
+                let pin = Pin(
+                   title: element.address,
+                   coordinate: CLLocationCoordinate2D(latitude: element.latitude, longitude: element.longitude),
+                   info: "",
+                   pmr: element.accessibility == "Oui" ? .pmrTrue : .pmrFalse
+                )
+                pins.append(pin)
+                
+            }
+            mapView.addAnnotations(pins)
+        } else {
+            self.presentAlert()
+        }
+    }
+    
+    private func presentAlert() {
+           let alertVC = UIAlertController(title: "Error", message: "API data donwload failed", preferredStyle: .alert)
+           alertVC.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+           present(alertVC, animated: true, completion: nil)
+       }
     
     // function to change the style of the map
     @IBAction func ChangeMapTypeButton(_ sender: UISegmentedControl) {
@@ -60,7 +95,6 @@ extension ViewController: MKMapViewDelegate {
         mapView.showsUserLocation = true
         mapView.delegate = self
         mapView.isRotateEnabled = true
-        mapView.addAnnotations(Location.allLocation)
         
         let toiletsArea = MKCircle(center: coordinateInit, radius: 1000) // toilets within a radius of one kilometer
         mapView.addOverlay(toiletsArea)
