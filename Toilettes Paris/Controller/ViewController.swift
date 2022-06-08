@@ -39,8 +39,7 @@ class ViewController: UIViewController {
         ToiletService.shared.loadAll(callback: self.loadingEnded)
     }
     
-    private func loadingEnded(success: Bool, toilets: [Toilet]?)
-    {
+    private func loadingEnded(success: Bool, toilets: [Toilet]?) {
         if success
         {
             var pins = [Pin]()
@@ -48,7 +47,7 @@ class ViewController: UIViewController {
                 let pin = Pin(
                    title: element.address,
                    coordinate: CLLocationCoordinate2D(latitude: element.latitude, longitude: element.longitude),
-                   info: "",
+                   info: element.hourly,
                    pmr: element.accessibility == "Oui" ? .pmrTrue : .pmrFalse
                 )
                 pins.append(pin)
@@ -69,7 +68,7 @@ class ViewController: UIViewController {
     // function to change the style of the map
     @IBAction func ChangeMapTypeButton(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
-        case 0 : mapView.mapType = MKMapType.standard
+        case 0 : mapView.mapType = .standard
         case 1 : mapView.mapType = .satellite
         case 2 : mapView.mapType = .hybrid
         default: break
@@ -84,8 +83,6 @@ class ViewController: UIViewController {
             print("nil in getPosition")
         }
     }
-    
-    
 }
 
 extension ViewController: MKMapViewDelegate {
